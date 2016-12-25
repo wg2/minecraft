@@ -11,9 +11,11 @@ x = pos.x+2
 y = pos.y
 z = pos.z
 
-#loop to create row of randomly spaced buildings
+height = random.randint(y+5,y+20)        #random building height
+
+#loop to create row of randomly spaced buildings with random height
 for loop in range(5):
-    mc.setBlocks(x, y, z, x+2, y+10, z+2, block.GLASS.id)
+    mc.setBlocks(x, y, z, x+2, height, z+2, block.GLASS.id)
     x = x + random.randint(x+5,x+20)    #randomly space next buildings
-    z = random.randint(z+5,z+20)        #random building height
+    height = random.randint(y+5,y+20)        #change next building height
 
