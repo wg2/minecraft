@@ -1,6 +1,8 @@
 import mcpi.minecraft as minecraft
 import mcpi.block as block
 import random
+
+#connect to the minecraft game
 mc = minecraft.Minecraft.create()
 
 #get position of player
